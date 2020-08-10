@@ -1,0 +1,25 @@
+@import "~taro-ui/dist/style/components/avatar.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+@import "@styles/theme.scss";
+
+.home-header {
+  @include center();
+  box-sizing: border-box;
+  padding: $padding-width;
+  color: $text-color;
+
+  &__left {
+    display: flex;
+    align-items: center;
+    font-size: $font-size-16;
+  }
+  &__avatar {
+    margin-right: $element-space;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    font-size: $font-size-14;
+  }
+}

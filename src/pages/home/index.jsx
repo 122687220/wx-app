@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
 import { View } from '@tarojs/components'
 import { AtTabBar } from 'taro-ui'
+import HomeHeader from '@components/HomeHeader/index'
 
-
-import "taro-ui/dist/style/components/button.scss" // 按需引入
 import './index.scss'
 
 export default class Index extends Component {
@@ -14,12 +13,6 @@ export default class Index extends Component {
       current: 0
     }
   }
-
-  componentWillMount () { }
-
-  componentDidMount () { }
-
-  componentWillUnmount () { }
 
   handleClick (value) {
     this.setState({
@@ -34,12 +27,13 @@ export default class Index extends Component {
   render () {
     return (
       <View className='index'>
+        <HomeHeader />
         <AtTabBar
           fixed
           tabList={[
-            { title: '待办事项', iconType: 'bullet-list', text: 'new' },
-            { iconType: 'camera' },
-            { title: '文件夹', iconType: 'folder', text: '100', max: 99 }
+            { title: '待办事项', iconType: 'bullet-list', text: 'new', key: 1 },
+            { iconType: 'camera', key: 2 },
+            { title: '文件夹', iconType: 'folder', text: '100', max: 99, key: 3 }
         ]}
           onClick={this.handleClick.bind(this)}
           current={this.state.current}
