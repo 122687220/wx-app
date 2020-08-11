@@ -1,3 +1,27 @@
-@import "~taro-ui/dist/style/components/tab-bar.scss";
-@import "~taro-ui/dist/style/components/badge.scss";
+@import "~taro-ui/dist/style/components/form.scss";
 @import "~taro-ui/dist/style/components/icon.scss";
+@import "~taro-ui/dist/style/components/toast.scss";
+@import "~taro-ui/dist/style/components/button.scss";
+@import "~taro-ui/dist/style/components/loading.scss";
+@import "~taro-ui/dist/style/components/input.scss";
+@import "@styles/theme.scss";
+
+.login {
+  color: $text-color;
+  padding: $padding-width;
+  box-sizing: border-box;
+  &__title {
+    font-size: $font-size-24;
+  }
+
+  &__form {
+    box-sizing: border-box;
+    margin: $margin-width 0 0 0;
+  }
+
+  &__btn {
+    margin-top: $margin-width;
+    box-sizing: border-box;
+    padding: 0 $padding-width;
+  }
+}

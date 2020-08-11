@@ -15,11 +15,7 @@ export default class Index extends Component {
     }
   }
 
-  componentWillMount () { }
-
   componentDidMount () { }
-
-  componentWillUnmount () { }
 
   handleClick (value) {
     this.setState({
